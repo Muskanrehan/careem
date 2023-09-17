@@ -1,0 +1,383 @@
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    background-color: white;
+    z-index: 9999;
+}
+
+hr {
+    margin: 500px;
+}
+
+ul {
+    margin: 40px;
+    margin-right: 20px;
+}
+
+li {
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline;
+    font-size: 20px;
+    padding: 10px;
+    color: black;
+}
+
+.button {
+    float: left;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    font-weight: 200;
+    background-color: rgb(14, 206, 46);
+    border: none;
+    border-radius: 15px;
+    height: 50px;
+    margin: 20px;
+    margin-left: 230px;
+}
+
+.button a:hover {
+    color: black;
+}
+
+.button:hover {
+    margin-top: -0.2rem;
+}
+
+.main {
+    margin: 20px;
+    width: 80px;
+    float: right;
+    font-size: 15px;
+    border: none;
+}
+
+.image {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    cursor: pointer;
+    color: rgb(14, 206, 46);
+    text-decoration: underline;
+}
+
+hr {
+    margin: auto;
+}
+
+
+#one {
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 25px;
+
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+
+}
+
+
+.boxone {
+    background-color: rgb(34, 11, 170);
+    color: white;
+}
+
+.boxtwo {
+    background-color: rgb(30, 233, 138);
+    color: rgb(0, 39, 0)
+}
+
+.boxthree {
+    background-color: rgb(128, 76, 212);
+    color: white;
+}
+
+.boxfour {
+    background-color: rgb(4, 4, 61);
+    color: white;
+}
+
+.icon {
+    border: none;
+    background-color: green;
+}
+
+.boxone,
+.boxtwo,
+.boxthree,
+.boxfour {
+    width: 300px;
+    height: 550px;
+    margin: 4px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    align-items: left;
+
+
+}
+
+@media screen and (max-width:600px) {
+
+    .boxone,
+    .boxtwo,
+    .boxthree,
+    .boxfour {
+        width: 90%;
+    }
+}
+
+
+
+/*
+li {font-family: sans-serif;
+font-size:20px;
+margin:1px;
+}
+*/
+h1 {
+    font-family: georgia;
+    font-size: 50px;
+    padding: 10px;
+}
+
+.boxone h1 {
+    color: white;
+}
+
+.container .boxone ul {
+    font-family: sans-serif;
+    padding: 0px;
+    margin: 0PX;
+    text-align: left;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.container .boxtwo ul {
+    font-family: sans-serif;
+    padding: 0px;
+    margin: 0PX;
+    text-align: left;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.container .boxthree ul {
+    font-family: sans-serif;
+    padding: 0px;
+    margin: 0PX;
+    text-align: left;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.container .boxfour ul {
+    font-family: sans-serif;
+    padding: 0px;
+    margin: 0PX;
+    text-align: left;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+.container .boxone li {
+    color: white;
+}
+
+.container .boxtwo li {
+    color: rgb(0, 34, 0);
+    font-weight: bold;
+}
+
+.container .boxthree li {
+    color: white;
+}
+
+.container .boxfour li {
+    color: white;
+}
+
+/* Content Container Styles (slides) */
+.content {
+    margin: 1rem;
+    padding: 0;
+    border-radius: 10px;
+    width: 95%;
+    height: 70vh;
+    overflow: hidden;
+    border: 1px transparent;
+    box-shadow: 20px hsl(0, 0%, 3%);
+    z-index: -1;
+}
+
+.show {
+    justify-content: center;
+    align-items: center;
+}
+
+.show img {
+    width: 70rem;
+    height: 30rem;
+}
+
+/* Slide Content Styles */
+.slide_content {
+    float: left;
+    width: 100%;
+    height: 50vh;
+}
+
+.slides {
+    width: 2400px;
+    -webkit-animation-name: slide;
+    -webkit-animation-duration: 20s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide_content:nth-child(1) {
+    z-index: 1;
+}
+
+/* Keyframe Animation for Slides */
+@keyframes slide {
+    20% {
+        margin-left: 0px;
+    }
+
+    40% {
+        margin-left: calc(-600px * 1);
+    }
+
+    60% {
+        margin-left: calc(-600px * 2);
+    }
+
+    80% {
+        margin-left: calc(-600px * 3);
+    }
+}
+
+.container {
+    margin-bottom: 50px;
+}
+
+#about {
+  
+    display: flex;
+    justify-content:space-around;
+
+}
+
+#about p {
+    font-size: 20px;
+    padding-left: 20px;
+    
+}
+
+#about h1 {font-size:30px;
+     padding-top: 20px;
+    padding: 20px;
+    line-height: 1px;
+}
+
+.text {
+    padding-left:50px;
+    padding-top:  80px; }
+    
+.readmore {
+    width: 100px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    font-weight: 200;
+    background-color: rgb(14, 206, 46);
+    border: none;
+    border-radius: 15px;
+    height: 50px;
+    margin: 20px;
+}
+
+
+.readmore a:hover {
+    cursor: pointer;
+    color: black;
+}
+
+#engineer {
+    display: flex;
+    justify-content:space-around; 
+}
+
+#engineer p { font-size: 20px;
+    padding-left: 20px;
+}
+
+#engineer h1 {
+    font-size: 30px;
+    padding-top: 20px;
+    padding: 20px;}
+
+
+
+
+table {margin:0;
+padding:0;
+
+}
+
+tr {
+    margin-bottom:-20px;}
+td {font-size: 15px;}
+.table container {padding-right: 1px;
+    justify-content:space-around;}
+
+
+
+
+.btn { width: 200px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    background-color: rgb(14, 206, 46);
+    border: none;
+    border-radius: 15px;
+    height:50px;
+    }
+.btn  a:hover {
+    cursor: pointer;
+    color: black;
+}
+th {color:rgb(2, 58, 2);
+    font-size:18px;}
